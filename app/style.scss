@@ -1,0 +1,17 @@
+@mixin user-select($select) {
+  -webkit-user-select: $select;
+  -moz-user-select: $select;
+  -ms-user-select: $select; // IE10+
+  user-select: $select;
+}
+
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+  -ms-transform: rotate($degrees); // IE9 only
+  -o-transform: rotate($degrees);
+}
+
+$inactiveButtonColor: #999999;
+
+@import "fonts/*.scss";
+@import "components/**/*.scss";
