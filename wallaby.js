@@ -5,9 +5,9 @@ module.exports = function(wallaby) {
 
     testFramework: 'jasmine@2.5.2',
     files: [
-      'dist/js/vendor.js',
-      'app/bower_components/angular-mocks/angular-mocks.js',
-      'dist/js/scripts.js',
+			{pattern: 'dist/js/vendor.js', instrument: false},
+			{pattern: 'app/bower_components/angular-mocks/angular-mocks.js', instrument: false},
+			{pattern: 'dist/js/scripts.js', instrument: false},
       'app/app.js',
       'app/components/**/*.js',
       '!app/**/*.spec.js'
